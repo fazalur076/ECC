@@ -1,4 +1,0 @@
-interface:
-  display_name: "Architecture"
-  short_description: "Evidence-based architecture workflow for ECC"
-  default_prompt: "Use $architecture to handle this project task with verified evidence."

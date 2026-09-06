@@ -1,4 +1,0 @@
-interface:
-  display_name: "Architecture Sync"
-  short_description: "Evidence-based architecture-sync workflow for ECC"
-  default_prompt: "Use $architecture-sync to handle this project task with verified evidence."

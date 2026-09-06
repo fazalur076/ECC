@@ -136,8 +136,6 @@ function showHelp(exitCode = 0) {
 ECC selective-install CLI
 
 Usage:
-  ecc                       Project setup or control center
-  ecc init --all --yes       Configure all four coding agents
   ecc <command> [args...]
   ecc [install args...]
   ecc --dry-run <command> [args...]
@@ -314,13 +312,8 @@ function runCommand(commandName, args) {
   return 1;
 }
 
-async function main() {
+function main() {
   try {
-    const projectCli = require('./lib/project-cli');
-    if (projectCli.shouldHandle(process.argv.slice(2))) {
-      process.exitCode = await projectCli.runProjectCli(process.argv.slice(2));
-      return;
-    }
     const resolution = resolveCommand(process.argv);
 
     if (resolution.mode === 'help') {

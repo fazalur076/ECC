@@ -1,46 +1,3 @@
-# ECC
-
-Portable engineering workflows for Claude Code, Cursor, Antigravity, and Codex.
-
-## Install
-
-From this checkout, with Node.js 18 or newer:
-
-```bash
-npm install --global .
-```
-
-## Initialize a project
-
-```bash
-cd ~/Projects/my-project
-ecc
-```
-
-Choose your agents and workflow components, review the summary, and confirm.
-ECC installs project-local skills and routing instructions; existing user rules
-are preserved. For automation, use `ecc init --all --yes`.
-
-## Verify
-
-```bash
-ecc doctor
-```
-
-Use your coding agent normally. The ECC Router classifies natural-language tasks
-and loads the smallest appropriate workflow: planning, root-cause debugging,
-TDD, review, security, performance, architecture, or design. Meaningful design
-work includes the Taste review and revision gate.
-
-Running `ecc` again opens the project control center. See the
-[project CLI guide](docs/project-cli.md) for commands, ownership and recovery,
-Cortex configuration, architecture blueprints, and integration limitations.
-
-Development execution: `node /path/to/ECC/scripts/ecc.js` from the target project.
-Legacy language installs and `ecc-install` remain available.
-
----
-
 <p align="center">
   <img src="assets/hero.png" alt="ECC - the agent harness operating system" width="100%" />
 </p>
@@ -205,12 +162,12 @@ Instead of rebuilding that process in every prompt, you install it once and make
 
 ECC is MIT-licensed open source. It works best with Claude Code today, has a supported Codex sync path, and provides capability-limited adapters for Cursor, OpenCode, Gemini, Zed, GitHub Copilot, Antigravity, Qwen, and other harnesses. See the [support status matrix](#platform-support) before assuming feature parity.
 
-Access to 68 agents, 298 skills, and 94 legacy command shims, plus hooks, rules, memory, continuous learning, and AgentShield security scanning. The agents are specialized for planning, review, build repair, security, architecture, and domain work.
+Access to 68 agents, 286 skills, and 94 legacy command shims, plus hooks, rules, memory, continuous learning, and AgentShield security scanning. The agents are specialized for planning, review, build repair, security, architecture, and domain work.
 
 | Included         |       Count | What it gives you                                                                    |
 | ---------------- | ----------: | ------------------------------------------------------------------------------------ |
 | Agents           |   68 agents | Planning, review, build repair, security, architecture, and domain work              |
-| Skills           |  298 skills | TDD, research, security, docs, frontend, data, ML, operations, and more              |
+| Skills           |  286 skills | TDD, research, security, docs, frontend, data, ML, operations, and more              |
 | Commands         | 94 commands | Convenient entry points while ECC moves to a skills-first surface                    |
 | Hooks and memory |     Runtime | Enforcement, session summaries, continuous learning, instincts, and context controls |
 | Rules            |   Selective | Always-loaded standards you choose by language or project                            |

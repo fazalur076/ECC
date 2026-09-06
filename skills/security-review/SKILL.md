@@ -9,11 +9,6 @@ metadata:
 
 This skill ensures all code follows security best practices and identifies potential vulnerabilities.
 
-## Scope by attack surface
-
-Start from the changed data flow and trust boundaries. Review auth, authorization and IDOR, injection, XSS, CSRF, SSRF, secrets, uploads, webhooks, deserialization, path traversal, cryptography, permissions, rate limiting, sensitive logging and token handling where those surfaces exist. Do not flood harmless UI changes with invented security findings. Each finding needs a plausible attacker, reachable input, missing control, impact and concrete source evidence. Redact sensitive values; never print .env secrets or copy them into prompts. Prioritize actionable vulnerabilities and distinguish unverified hypotheses.
-
-
 ## When to Activate
 
 - Implementing authentication or authorization

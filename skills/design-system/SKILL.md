@@ -7,11 +7,6 @@ metadata:
 
 # Design System — Generate & Audit Visual Systems
 
-## ECC workflow contract
-
-Inventory and reuse existing tokens and component primitives first. Do not accidentally create a second design system. Manage typography and spacing scales, radius, shadows, semantic colors, layout and component grammar, button/input hierarchy, responsive rules, motion rules, icons and all interaction states. Extend the existing canonical token source and documentation rather than always emitting the example files below. Inspect representative real components before proposing migrations, preserve compatibility, and route references through ui-reference when useful. After meaningful implementation run taste and automatically revise failures; verify responsive composition, accessibility and final rendered output.
-
-
 ## When to Use
 
 - Starting a new project that needs a design system

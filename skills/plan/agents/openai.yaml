@@ -1,4 +1,0 @@
-interface:
-  display_name: "Plan"
-  short_description: "Evidence-based plan workflow for ECC"
-  default_prompt: "Use $plan to handle this project task with verified evidence."

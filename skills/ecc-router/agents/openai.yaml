@@ -1,4 +1,0 @@
-interface:
-  display_name: "Ecc Router"
-  short_description: "Evidence-based ecc-router workflow for ECC"
-  default_prompt: "Use $ecc-router to handle this project task with verified evidence."

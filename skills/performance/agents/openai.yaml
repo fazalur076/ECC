@@ -1,4 +1,0 @@
-interface:
-  display_name: "Performance"
-  short_description: "Evidence-based performance workflow for ECC"
-  default_prompt: "Use $performance to handle this project task with verified evidence."

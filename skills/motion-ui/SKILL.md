@@ -11,11 +11,6 @@ Production-ready UI motion system for React / Next.js.
 
 Focused on **performance, accessibility, and usability** — not decoration.
 
-## ECC workflow contract
-
-Use motion for state transitions, navigation continuity, hierarchy, feedback, progress, spatial relationships and appropriate delight. Avoid everything fading/scaling, constant parallax, delays to interaction and decorative movement without purpose. Choose technology already present; examples below are techniques, not requirements. Preserve focus continuity and keyboard behavior across transitions; use the project's accessible dialog primitive where available. Respect reduced-motion preferences and stop unused animation work. After meaningful changes run taste, automatically revise failures, and verify responsive, accessible rendered behavior.
-
-
 ## When to Use
 
 Use this motion system when motion:

@@ -82,7 +82,6 @@
         "cpp-reviewer"
       ],
       "skills": [
-        "code-review",
         "cpp-coding-standards",
         "cpp-testing"
       ],
@@ -130,9 +129,7 @@
       "type": "review",
       "primaryAgents": [],
       "allAgents": [],
-      "skills": [
-        "plan"
-      ],
+      "skills": [],
       "path": "commands/epic-decompose.md"
     },
     {
@@ -150,9 +147,7 @@
       "type": "review",
       "primaryAgents": [],
       "allAgents": [],
-      "skills": [
-        "code-review"
-      ],
+      "skills": [],
       "path": "commands/epic-review.md"
     },
     {
@@ -237,7 +232,6 @@
         "flutter-reviewer"
       ],
       "skills": [
-        "code-review",
         "flutter-dart-code-review"
       ],
       "path": "commands/flutter-review.md"
@@ -303,7 +297,6 @@
         "go-reviewer"
       ],
       "skills": [
-        "code-review",
         "golang-patterns",
         "golang-testing"
       ],
@@ -413,9 +406,7 @@
       "primaryAgents": [],
       "allAgents": [],
       "skills": [
-        "code-review",
-        "jira-integration",
-        "plan"
+        "jira-integration"
       ],
       "path": "commands/jira.md"
     },
@@ -445,7 +436,6 @@
         "kotlin-reviewer"
       ],
       "skills": [
-        "code-review",
         "kotlin-patterns",
         "kotlin-testing"
       ],
@@ -506,9 +496,7 @@
       "primaryAgents": [],
       "allAgents": [],
       "skills": [
-        "code-review",
-        "marketing-campaign",
-        "plan"
+        "marketing-campaign"
       ],
       "path": "commands/marketing-campaign.md"
     },
@@ -527,9 +515,7 @@
       "type": "orchestration",
       "primaryAgents": [],
       "allAgents": [],
-      "skills": [
-        "plan"
-      ],
+      "skills": [],
       "path": "commands/multi-backend.md"
     },
     {
@@ -538,9 +524,7 @@
       "type": "orchestration",
       "primaryAgents": [],
       "allAgents": [],
-      "skills": [
-        "plan"
-      ],
+      "skills": [],
       "path": "commands/multi-execute.md"
     },
     {
@@ -549,9 +533,7 @@
       "type": "orchestration",
       "primaryAgents": [],
       "allAgents": [],
-      "skills": [
-        "plan"
-      ],
+      "skills": [],
       "path": "commands/multi-frontend.md"
     },
     {
@@ -561,8 +543,7 @@
       "primaryAgents": [],
       "allAgents": [],
       "skills": [
-        "accessibility",
-        "plan"
+        "accessibility"
       ],
       "path": "commands/multi-plan.md"
     },
@@ -572,9 +553,7 @@
       "type": "orchestration",
       "primaryAgents": [],
       "allAgents": [],
-      "skills": [
-        "plan"
-      ],
+      "skills": [],
       "path": "commands/multi-workflow.md"
     },
     {
@@ -654,7 +633,6 @@
       "primaryAgents": [],
       "allAgents": [],
       "skills": [
-        "plan",
         "plan-canvas"
       ],
       "path": "commands/plan-canvas.md"
@@ -665,9 +643,7 @@
       "type": "testing",
       "primaryAgents": [],
       "allAgents": [],
-      "skills": [
-        "plan"
-      ],
+      "skills": [],
       "path": "commands/plan-prd.md"
     },
     {
@@ -681,8 +657,6 @@
         "planner"
       ],
       "skills": [
-        "code-review",
-        "plan",
         "plan-canvas"
       ],
       "path": "commands/plan.md"
@@ -702,10 +676,7 @@
       "type": "testing",
       "primaryAgents": [],
       "allAgents": [],
-      "skills": [
-        "code-review",
-        "plan"
-      ],
+      "skills": [],
       "path": "commands/pr.md"
     },
     {
@@ -747,9 +718,7 @@
       "type": "testing",
       "primaryAgents": [],
       "allAgents": [],
-      "skills": [
-        "code-review"
-      ],
+      "skills": [],
       "path": "commands/prp-commit.md"
     },
     {
@@ -758,10 +727,7 @@
       "type": "testing",
       "primaryAgents": [],
       "allAgents": [],
-      "skills": [
-        "code-review",
-        "plan"
-      ],
+      "skills": [],
       "path": "commands/prp-implement.md"
     },
     {
@@ -770,9 +736,7 @@
       "type": "testing",
       "primaryAgents": [],
       "allAgents": [],
-      "skills": [
-        "plan"
-      ],
+      "skills": [],
       "path": "commands/prp-plan.md"
     },
     {
@@ -781,9 +745,7 @@
       "type": "testing",
       "primaryAgents": [],
       "allAgents": [],
-      "skills": [
-        "code-review"
-      ],
+      "skills": [],
       "path": "commands/prp-pr.md"
     },
     {
@@ -792,9 +754,7 @@
       "type": "testing",
       "primaryAgents": [],
       "allAgents": [],
-      "skills": [
-        "plan"
-      ],
+      "skills": [],
       "path": "commands/prp-prd.md"
     },
     {
@@ -819,7 +779,6 @@
         "python-reviewer"
       ],
       "skills": [
-        "code-review",
         "python-patterns",
         "python-testing"
       ],
@@ -864,7 +823,6 @@
       ],
       "skills": [
         "accessibility",
-        "code-review",
         "react-patterns",
         "react-testing"
       ],
@@ -937,7 +895,6 @@
         "rust-reviewer"
       ],
       "skills": [
-        "code-review",
         "rust-patterns",
         "rust-testing"
       ],
@@ -1064,7 +1021,6 @@
         "vue-reviewer"
       ],
       "skills": [
-        "code-review",
         "vue-patterns"
       ],
       "path": "commands/vue-review.md"
@@ -1124,14 +1080,6 @@
     ],
     "topSkills": [
       {
-        "skill": "code-review",
-        "count": 16
-      },
-      {
-        "skill": "plan",
-        "count": 15
-      },
-      {
         "skill": "continuous-learning-v2",
         "count": 6
       },
@@ -1162,6 +1110,14 @@
       {
         "skill": "rust-patterns",
         "count": 3
+      },
+      {
+        "skill": "cpp-coding-standards",
+        "count": 2
+      },
+      {
+        "skill": "cpp-testing",
+        "count": 2
       }
     ]
   }
