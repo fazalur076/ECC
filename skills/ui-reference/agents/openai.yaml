@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ui Reference"
+  short_description: "Evidence-based ui-reference workflow for ECC"
+  default_prompt: "Use $ui-reference to handle this project task with verified evidence."

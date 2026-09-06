@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ui Audit"
+  short_description: "Evidence-based ui-audit workflow for ECC"
+  default_prompt: "Use $ui-audit to handle this project task with verified evidence."

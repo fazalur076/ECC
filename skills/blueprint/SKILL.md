@@ -8,8 +8,8 @@ description: >-
   detection, anti-pattern catalog, and plan mutation protocol.
   TRIGGER when: user requests a plan, blueprint, or roadmap for a
   complex multi-PR task, or describes work that needs multiple sessions.
-  DO NOT TRIGGER when: task is completable in a single PR or fewer
-  than 3 tool calls, or user says "just do it".
+  Also use to create persistent architecture knowledge from verified repository
+  execution paths; this architecture mode applies even to small repositories.
 metadata:
   origin: community
 ---
@@ -17,6 +17,14 @@ metadata:
 # Blueprint — Construction Plan Generator
 
 Turn a one-line objective into a step-by-step construction plan that any coding agent can execute cold.
+
+## Persistent architecture mode
+
+When the request is to understand and persist the system rather than schedule construction, use understand-codebase first. Prefer healthy Cortex lookup, verify real execution paths in source, and reuse configured Archify output if it already provides this knowledge. Do not create a duplicate architecture source of truth.
+
+Run `ecc architecture init` to initialize supported project scaffolding, then populate `.architecture/SYSTEM.md`, `STACK.md`, `MODULES.md`, `ENTRY_POINTS.md`, `REQUEST_FLOWS.md`, `DATABASE.md`, `AUTH.md`, `INTEGRATIONS.md`, `BACKGROUND_JOBS.md`, `FRONTEND.md`, `BACKEND.md`, `DEPLOYMENT.md`, `RISKS.md` and `diagrams/` from evidence. Record source paths/symbols, verified Git state, confidence and unknowns. Mark absent components as not applicable. A scaffold or directory listing is not a verified blueprint.
+
+Preserve existing documentation and ownership; use its established structure where possible. Persist contracts, module responsibilities and a real flow, not guesses from filenames. Use architecture-sync after meaningful structural changes to update only affected pages. Follow understand → persist → build → sync. The construction planning workflow below remains available for multi-session plans and does not constrain architecture mode.
 
 ## When to Use
 
@@ -69,7 +77,7 @@ Produces a plan with parallel steps where possible (e.g., "implement Anthropic p
 - **Branch/PR/CI workflow** — Built into every step. Degrades gracefully to direct mode when git/gh is absent.
 - **Parallel step detection** — Dependency graph identifies steps with no shared files or output dependencies.
 - **Plan mutation protocol** — Steps can be split, inserted, skipped, reordered, or abandoned with formal protocols and audit trail.
-- **Zero runtime risk** — Pure Markdown skill. The entire repository contains only `.md` files — no hooks, no shell scripts, no executable code, no `package.json`, no build step. Nothing runs on install or invocation beyond Claude Code's native Markdown skill loader.
+- **Portable workflow** — Canonical Markdown is installed through ECC agent adapters; repository maintenance commands run only when intentionally invoked.
 
 ## Installation
 
