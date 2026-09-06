@@ -1,0 +1,4 @@
+interface:
+  display_name: "3D Ui"
+  short_description: "Evidence-based 3d-ui workflow for ECC"
+  default_prompt: "Use $3d-ui to handle this project task with verified evidence."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Design Ui"
+  short_description: "Evidence-based design-ui workflow for ECC"
+  default_prompt: "Use $design-ui to handle this project task with verified evidence."

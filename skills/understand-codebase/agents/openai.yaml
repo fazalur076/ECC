@@ -1,0 +1,4 @@
+interface:
+  display_name: "Understand Codebase"
+  short_description: "Evidence-based understand-codebase workflow for ECC"
+  default_prompt: "Use $understand-codebase to handle this project task with verified evidence."
