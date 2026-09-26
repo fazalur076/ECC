@@ -6,7 +6,7 @@ const path = require('node:path');
 const { SKILLS, AGENTS, selectSkills, selectComponents, getSkill } = require('../../scripts/lib/project-registry');
 
 test('registry includes valid portable canonical skill sources', () => {
-  assert.equal(SKILLS.length, 18);
+  assert.equal(SKILLS.length, 20);
   for (const skill of SKILLS) {
     assert.deepEqual(skill.supportedAgents, AGENTS);
     assert.ok(skill.version);
@@ -30,4 +30,11 @@ test('component selection chooses workflows with mandatory design review', () =>
   assert.ok(selected.includes('taste'));
   assert.ok(!selected.includes('performance'));
   assert.throws(() => selectComponents(['nonsense']), /Unknown component/);
+});
+
+test('orchestration component installs the Chief of Staff workflow and its gates', () => {
+  const selected = selectComponents(['orchestration']);
+  for (const id of ['ecc-router', 'chief-of-staff', 'team-agent-orchestration', 'plan', 'code-review']) {
+    assert.ok(selected.includes(id), id);
+  }
 });

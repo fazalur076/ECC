@@ -9,7 +9,7 @@ const architecture = require('./project-architecture');
 
 const COMMANDS = ['init', 'install', 'status', 'doctor', 'repair', 'update', 'uninstall', 'agents', 'skills', 'cortex', 'architecture'];
 const LABELS = { claude: 'Claude Code', cursor: 'Cursor', antigravity: 'Antigravity', codex: 'Codex' };
-const COMPONENTS = ['router', 'engineering', 'architecture', 'design', 'taste', 'testing', 'review', 'security', 'performance', 'debugging'];
+const COMPONENTS = ['router', 'engineering', 'architecture', 'orchestration', 'design', 'taste', 'testing', 'review', 'security', 'performance', 'debugging'];
 function projectExists(cwd) {
   let root = path.resolve(cwd);
   while (true) {
@@ -129,7 +129,7 @@ async function authorize(options, summary) {
 }
 function selectedSkills(components) {
   if (!components) return undefined;
-  const mapping = { router: ['ecc-router'], engineering: ['plan', 'understand-codebase', 'architecture'], architecture: ['blueprint', 'architecture-sync'], design: ['design-ui', 'ui-audit', 'ui-reference', 'motion-ui', '3d-ui', 'design-system'], taste: ['taste'], testing: ['tdd-workflow'], review: ['code-review'], security: ['security-review'], performance: ['performance'], debugging: ['fix'] };
+  const mapping = { router: ['ecc-router'], engineering: ['plan', 'understand-codebase', 'architecture'], architecture: ['blueprint', 'architecture-sync'], orchestration: ['chief-of-staff'], design: ['design-ui', 'ui-audit', 'ui-reference', 'motion-ui', '3d-ui', 'design-system'], taste: ['taste'], testing: ['tdd-workflow'], review: ['code-review'], security: ['security-review'], performance: ['performance'], debugging: ['fix'] };
   return selectSkills(components.flatMap(component => mapping[component]));
 }
 async function setup(project, options, configure) {

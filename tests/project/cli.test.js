@@ -120,6 +120,15 @@ test('project CLI detects various project types and initializes selectively', t 
   assert.ok(cortexData !== null);
 });
 
+test('project CLI installs the orchestration workflow for Antigravity and Codex', t => {
+  const root = fixture(t);
+  const result = run(root, ['init', '--agent', 'antigravity,codex', '--components', 'orchestration', '--yes']);
+  assert.equal(result.status, 0, result.stderr + result.stdout);
+  for (const skill of ['chief-of-staff', 'team-agent-orchestration', 'plan', 'code-review']) {
+    assert.equal(fs.existsSync(path.join(root, '.agents/skills', skill, 'SKILL.md')), true, skill);
+  }
+});
+
 test('existing configurations and custom rules are preserved across operations', t => {
   const root = fixture(t);
   fs.writeFileSync(path.join(root, 'CLAUDE.md'), '# Existing Claude Instructions\nCustom team rules.\n');
@@ -145,4 +154,3 @@ test('existing configurations and custom rules are preserved across operations',
   assert.equal(fs.readFileSync(path.join(root, '.agents/rules/custom.md'), 'utf8'), '---\ntrigger: always\n---\nCustom agent rule\n');
   assert.equal(fs.readFileSync(path.join(root, 'CLAUDE.md'), 'utf8'), '# Existing Claude Instructions\nCustom team rules.\n');
 });
-
