@@ -21,6 +21,7 @@ Read `.ecc/config.json` to discover installed workflows and integrations. Load o
 | Explain this repository; onboard me; trace a request | understand-codebase |
 | Persist the system map; create an architecture blueprint | blueprint |
 | Choose service boundaries; assess a migration | architecture, then plan if implementation is complex |
+| Coordinate multiple agents, worktrees, branches, or an implementation/review handoff | chief-of-staff, team-agent-orchestration |
 | Add a feature across modules; migrate an API | plan, tdd-workflow, code-review |
 | This crashes; fix this regression | fix, tdd-workflow, code-review |
 | Review this change | code-review |

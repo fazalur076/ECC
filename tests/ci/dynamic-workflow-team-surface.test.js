@@ -35,6 +35,15 @@ const SURFACES = [
     ],
   },
   {
+    path: 'skills/chief-of-staff/SKILL.md',
+    required: [
+      'parallel engineering work',
+      'git worktrees',
+      'independent reviewer',
+      'human approval'
+    ],
+  },
+  {
     path: 'docs/business/team-agent-orchestration-content-pack.md',
     required: [
       'Video Concepts',
